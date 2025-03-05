@@ -1659,3 +1659,29 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.about-container {
+			display: flex;
+			align-items: center; /* Aligns text and image vertically */
+			justify-content: space-between; /* Puts space between text and image */
+			flex-wrap: wrap; /* Allows wrapping on smaller screens */
+		  }
+		  
+		  .about-text {
+			flex: 1; /* Takes up available space */
+			padding-right: 20px; /* Adds spacing between text and image */
+			max-width: 50%; /* Limits width to prevent stretching */
+		  }
+		  
+		  .about-image {
+			flex: 1;
+			display: flex;
+			justify-content: flex-end; /* Moves image to the right */
+			max-width: 50%;
+		  }
+		  
+		  .about-image img {
+			width: 100%; /* Makes image responsive */
+			max-width: 300px; /* Adjust max-width to control image size */
+			height: auto; /* Maintains aspect ratio */
+			border-radius: 8px; /* Optional: Adds rounded corners */
+		  }
