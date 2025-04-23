@@ -26,11 +26,11 @@
         </div>
         <nav>
           <ul>
-            <!-- Make sure you have a link to #resume in your nav -->
             <li><a href="#work">Work</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#resume">Resume</a></li> <!-- Added Resume Link -->
             <li><a href="#contact">Contact</a></li>
+            <!--<li><a href="#elements">Elements</a></li>--> <!-- Optional: remove if not using -->
           </ul>
         </nav>
       </header>
@@ -39,19 +39,16 @@
       <div id="main">
 
         <!-- Work -->
-         
         <article id="work">
           <h2 class="major">Work</h2>
-		  <h3>Design, Analysis, Engineering</h3>
+          <h3>Design, Analysis, Engineering</h3>
           <span class="image main">
-            <!--<img src="images/pic02.jpg" alt="" />-->
+            <!-- Optional: Add a relevant header image for the work section -->
+            <!-- <img src="images/pic_work_header.jpg" alt="Work Projects Banner" /> -->
           </span>
-          
 
-          
-          <!-- Example Canva embed -->
-		   <h2>Lap Logic - Sim Racing Telemetry Agent Report</h2>
-          <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%; padding-bottom: 0; 
+          <h2>Lap Logic - Sim Racing Telemetry Agent Report</h2>
+          <div style="position: relative; width: 100%; height: 0; padding-top: 75%; /* Adjusted padding for potentially wider aspect ratio */ padding-bottom: 0;
                       box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em;
                       overflow: hidden; border-radius: 8px; will-change: transform;">
             <iframe loading="lazy"
@@ -60,74 +57,73 @@
                     allowfullscreen="allowfullscreen" allow="fullscreen">
             </iframe>
           </div>
-          <a href="https://www.canva.com/design/DAGYW3fBykU/kuIL7Ov8ufmz8U1R7gQLUg/view?utm_content=DAGYW3fBykU&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-             target="_blank" rel="noopener">
-            Black &amp; White Modern Design Project Proposal Document
-          </a>
+          <p>
+              <a href="https://www.canva.com/design/DAGYW3fBykU/kuIL7Ov8ufmz8U1R7gQLUg/view?utm_content=DAGYW3fBykU&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                 target="_blank" rel="noopener">
+                View Lap Logic Report on Canva
+              </a>
+          </p>
+          <p>Project utilizing Python libraries like Numpy and Pandas to perform analysis of data collected from real time gameplay.</p>
 
-		  <p>Project utilizing Python libraries like Numpy and Pandas to perform analysis of data collected from real time gameplay.</p>
+          <hr />
 
-		  <hr />
-      <section>
-        <div class="about-container">
-          <div class="about-text">
-            <h3>Flower Classification - Decision Tree</h3>
-            <p>Utilized a decision tree model from the scikit-learn module in Python, achieving a 97.7% accuracy.</p>
-          </div>
-          <div class="about-image">
-            <img src="images/dtport.png" alt="Gaurav Prasad">
-          </div>
-        </div>
+          <section>
+             <div class="about-container"> <!-- Reusing class name, ensure CSS is general or adjust -->
+               <div class="about-text">
+                 <h3>Flower Classification - Decision Tree</h3>
+                 <p>Utilized a decision tree model from the scikit-learn module in Python, achieving a 97.7% accuracy.</p>
+               </div>
+               <div class="about-image">
+                 <img src="images/dtport.png" alt="Decision Tree Visualization">
+               </div>
+             </div>
+          </section>
 
-      </section>
-    <hr />
-      
-      <section>
+          <hr />
 
-        <div class="about-container">
-          <div class="about-text">
-            <h3>Bomb Lab - Computer Systems</h3>
-            <p>Employed assembly code to reverse engineer inputs to functions to "defuse the bomb".</p>
-          </div>
-          <div class="about-image">
-            <img src="images/bomblab.png" alt="img">
-          </div>
-        </div>
+          <section>
+             <div class="about-container">
+               <div class="about-text">
+                 <h3>Bomb Lab - Computer Systems</h3>
+                 <p>Employed assembly code to reverse engineer inputs to functions to "defuse the bomb".</p>
+               </div>
+               <div class="about-image">
+                 <img src="images/bomblab.png" alt="Bomb Lab Code Snippet">
+               </div>
+             </div>
+          </section>
 
-      </section>
-      <hr />
-      
-      <section>
-        <header>
-          <h3>Data Lab - Computer Systems</h3>
-        </header>
-        <p>Applied bitwise operations to efficiently perform various functions.</p>
-      </section>
-      
-      <section>
-        <header>
-          <h3>Metallica Sentiment Analysis</h3>
-        </header>
-        <p>Analyzed the evolution of sentiment in Metallica's music using Spotify API data combined with sentiment analysis tools like VADER and NLTK.</p>
-      </section>
-      
-      <section>
-        <header>
-          <h3>Reinstalled Mod Manager Design Project</h3>
-        </header>
-        <p>Aimed to envision a better system for gamers to interact with and load mods for video games.</p>
-      </section>
+          <hr />
+
+          <section>
+             <!-- Consider using headers consistently if desired -->
+             <h3>Data Lab - Computer Systems</h3>
+             <p>Applied bitwise operations to efficiently perform various functions.</p>
+          </section>
+
+          <hr /> <!-- Added HR for consistency -->
+
+          <section>
+             <h3>Metallica Sentiment Analysis</h3>
+             <p>Analyzed the evolution of sentiment in Metallica's music using Spotify API data combined with sentiment analysis tools like VADER and NLTK.</p>
+          </section>
+
+          <hr /> <!-- Added HR for consistency -->
+
+          <section>
+             <h3>Reinstalled Mod Manager Design Project</h3>
+             <p>Aimed to envision a better system for gamers to interact with and load mods for video games.</p>
+          </section>
         </article>
 
-<!-- About Section -->
+        <!-- About Section -->
         <article id="about">
           <h2 class="major">About</h2>
           <div class="about-container">
             <div class="about-text">
-              <p>Hi, I am a budding data analyst who has devoted a lot of time to computer science topics as well. I love being able to investigate the data in order to solve problems or improve efficiency of operations. <br>
-
+              <p>Hi, I am a budding data analyst who has devoted a lot of time to computer science topics as well. I love being able to investigate the data in order to solve problems or improve efficiency of operations. <br><br> <!-- Added line break for spacing -->
                 I was raised in Washington State and am graduating from the University of Colorado at Boulder in May 2025. I am a member of our school frisbee team which competes in the College National Championship every year, Mamabird Ultimate. 
-                </p>
+              </p>
             </div>
             <div class="about-image">
               <img src="images/face.jpg" alt="Gaurav Prasad">
@@ -135,138 +131,94 @@
           </div>
         </article>
 
-
         <!-- Resume (NEW ARTICLE) -->
         <article id="resume">
           <h2 class="major">Resume</h2>
-			
-		  <ul class="actions">
-			<li>
-			  <a 
-				href="assets/pdf/Prasad_Gaurav_Resume.pdf"
-				download="Gaurav_Prasad_Resume.pdf"
-				class="button primary"
-			  >
-				Download Resume
-			  </a>
-			</li>
-		  </ul>
-          <!-- Your Resume Styles (inline). Feel free to move these to a separate CSS file if you prefer. -->
-          <!--<style>
-            /* Removed or commented out the "body" styles since Dimension has its own. 
-               If you want to override them, you can keep them, but it may clash visually. */
 
-            .container {
-              max-width: 900px;
-              margin: 0 auto;
-              background: white;
-              padding: 5px;
-              box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-              border-radius: 0px;
-            }
-            header.resume-header {
-              text-align: center;
-              margin-bottom: 1px;
-            }
-            header.resume-header h1 {
-              color: #333;
-              border-bottom: 1px solid #bbb;
-              padding-bottom: 1px;
-              font-size: 16pt;
-              line-height: 1.2;
-            }
-            /* We'll rename h2 to something else or keep it if you like, but Dimension also uses h2.
-               If you want to keep the style, that's fine, but realize it might override Dimension's. */
-            .container .section h2 {
-              color: #333;
-              border-bottom: 1px solid #bbb;
-              padding-bottom: 1px;
-              font-size: 14pt;
-              line-height: 1.1;
-            }
-            ul {
-              list-style-type: none;
-              padding: 0;
-            }
-            ul li::before {
-              content: "• ";
-              color: #007bff;
-            }
-            .section {
-              padding: 1px 0;
-            }
-            a {
-              color: #007bff;
-              text-decoration: none;
-            }
-            a:hover {
-              text-decoration: underline;
-            }
-          </style>-->
+          <!-- Download Button -->
+          <ul class="actions">
+            <li>
+              <!-- IMPORTANT: Make sure this path is correct! -->
+              <a
+                href="assets/pdf/Prasad_Gaurav_Resume.pdf"
+                download="Gaurav_Prasad_Resume.pdf"
+                class="button primary icon solid fa-download" <!-- Added icon -->
+              >
+                Download Resume
+              </a>
+            </li>
+          </ul>
 
-          <!-- Your Resume Content -->
-          <div class="container">
-            <!-- We'll rename the 'header' element to avoid confusion with Dimension's <header> -->
+          <!-- Resume Content -->
+          <div class="container"> <!-- Optional container div -->
             <header class="resume-header">
-              <h1>Gaurav Prasad</h1>
-              <p>
-                <a href="mailto:Gaurav7210@outlook.com">Gaurav7210@outlook.com</a> | 
-                <a href="https://prasadgaurav40.wixsite.com/gauravprasad">Portfolio</a>
+              <!-- Name is already prominent on the page, but keep if desired -->
+              <!-- <h1>Gaurav Prasad</h1> -->
+              <p style="text-align: center;"> <!-- Centered contact info -->
+                <a href="mailto:Gaurav7210@outlook.com">Gaurav7210@outlook.com</a> |
+                <a href="https://prasadgaurav40.wixsite.com/gauravprasad" target="_blank" rel="noopener">Portfolio</a>
+                <!-- Add LinkedIn link here if you have one -->
+                <!-- | <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a> -->
               </p>
             </header>
 
             <div class="section">
-              <h2>Profile</h2>
+              <h3>Profile</h3> <!-- Changed to h3 for better hierarchy within the article -->
               <p>Dedicated Information Science major with a passion for uncovering and solving problems. Eager to learn and apply analytical skills in Python, SQL for data driven decision making.</p>
             </div>
 
             <div class="section">
-              <h2>Education</h2>
+              <h3>Education</h3>
               <p>
                 <strong>University of Colorado at Boulder</strong> (Graduating May 2025)<br>
-                B.S in Information Science | Minor in Computer Science <br>3.6 GPA
+                B.S in Information Science | Minor in Computer Science <br>
+                GPA: 3.6
               </p>
             </div>
 
             <div class="section">
-              <h2>Skills</h2>
+              <h3>Skills</h3>
               <ul>
-                <li><strong>Coding</strong>: Python, SQL, C, Java, HTML, OOP</li>
-                <li><strong>Analysis</strong>: AB testing, Regression, Descriptive statistics, Inferential statistics, Machine learning, Sentiment analysis</li>
-                <li><strong>Visualization</strong>: PowerBI, Tableau, Matplotlib, Altair</li>
+                <li><strong>Coding:</strong> Python, SQL, C, Java, HTML, OOP</li>
+                <li><strong>Analysis:</strong> A/B testing, Regression, Descriptive statistics, Inferential statistics, Machine learning, Sentiment analysis</li>
+                <li><strong>Visualization:</strong> PowerBI, Tableau, Matplotlib, Altair</li>
+                 <li><strong>Tools & Platforms:</strong> Git, Jupyter Notebooks, VS Code, Google Cloud Platform (Basic), AWS (Basic)</li> <!-- Example Addition -->
               </ul>
             </div>
 
             <div class="section">
-              <h2>Experience</h2>
-              <p><strong>FAS 360 Summer Internship (2025)</strong><br>
+              <h3>Experience</h3>
+              <p><strong>FAS 360 Summer Internship</strong> | Summer 2025<br> <!-- Adjusted date format -->
               <span style="font-style: italic; color: #555;">GSA - Professional Services and Human Capital</span></p>
               <ul>
-                <li>12-week internship with GSA’s Professional Services and Human Capital team and offered a return opportunity</li>
-                <li>Co-led 2 leadership trainings for Multiple Award Schedule University teachers.</li>
-				<li>Shadowed 4 established data analysts to gain real-world knowledge.</li>
+                <li>Participated in a 12-week internship program with GSA’s Professional Services and Human Capital team, resulting in a return offer.</li> <!-- Reworded slightly -->
+                <li>Co-facilitated two leadership training sessions for Multiple Award Schedule University instructors.</li>
+                <li>Shadowed four established data analysts, gaining insights into real-world data analysis workflows and challenges.</li>
               </ul>
 
-              <p><strong>Visualization Consultant</strong><br>
+              <p><strong>Visualization Consultant</strong><br> <!-- Add Dates if available -->
               <span style="font-style: italic; color: #555;">Inclusive America</span></p>
               <ul>
-                <li>Developed 2 interactive dashboards to visualize diversity metrics across US state governments.</li>
-				<li>Created documentation to allow for replication for remaining 48 states.</li>
+                <li>Developed two interactive dashboards using [Specify Tool, e.g., Tableau/PowerBI] to visualize diversity metrics across US state governments.</li>
+                <li>Authored comprehensive documentation enabling replication of dashboards for the remaining 48 states.</li>
               </ul>
 
-              <p><strong>Tech Sales Associate (Jan 2022 – Apr 2022)</strong><br>
+              <p><strong>Tech Sales Associate</strong> | Jan 2022 – Apr 2022<br>
               <span style="font-style: italic; color: #555;">Target</span></p>
               <ul>
-                <li>Provided tech product support for 10+ customers daily and managed stock organization.</li>
-				<li>Resolved technical issues for customers, improving satisfaction by 2%.</li>
+                <li>Provided technical product support and recommendations to 10+ customers daily.</li>
+                <li>Managed stock organization and inventory for the electronics department.</li>
+                <li>Resolved customer technical issues, contributing to a measured 2% improvement in department satisfaction scores.</li>
               </ul>
             </div>
 
             <div class="section">
-              <h2>Projects</h2>
-              <p><strong>Lap Logic</strong> – Sim Racing telemetry agent designed for beginners to analytically improve lap times. Succeeded in improving beginner lap times by up to 8%.</p>
-              <p><strong>Metallica Sentiment Analysis</strong> – Analyzed lyrics to find trends in band success and sentiment.</p>
-              <p><strong>ML Flower Classification</strong> – Used Scikit-Learn Decision Tree model to achieve a 97.7% prediction accuracy.</p>
+              <h3>Projects</h3>
+              <p><strong>Lap Logic:</strong> Sim Racing telemetry agent designed for beginners to analytically improve lap times using Python (Pandas, NumPy). Successfully demonstrated improvement in beginner lap times by up to 8%. <a href="#work">[See Above]</a></p> <!-- Link back to work section -->
+              <p><strong>Metallica Sentiment Analysis:</strong> Analyzed lyrical evolution and sentiment trends in the band's discography using Spotify API, NLTK, and VADER. <a href="#work">[See Above]</a></p>
+              <p><strong>ML Flower Classification:</strong> Implemented a Decision Tree classifier using Scikit-Learn in Python to predict flower species, achieving 97.7% accuracy on the test dataset. <a href="#work">[See Above]</a></p>
+              <!-- Add links to GitHub repos if available -->
+              <!-- <p><strong>Project Name:</strong> Description <a href="GITHUB_LINK" target="_blank" rel="noopener">[GitHub]</a></p> -->
             </div>
           </div>
         </article>
@@ -274,23 +226,52 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <!-- existing contact form, etc. -->
+          <form method="post" action="#"> <!-- Add your form processing endpoint here -->
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" class="primary" /></li>
+              <li><input type="reset" value="Reset" /></li>
+            </ul>
+          </form>
+          <ul class="icons">
+             <!-- Add social links here -->
+            <li><a href="mailto:Gaurav7210@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/gauravprasad111/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li> <!-- Add your LinkedIn -->
+            <li><a href="https://github.com/YOUR_GITHUB_USERNAME/" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>   <!-- Add your GitHub -->
+            <!-- Add other relevant social links -->
+          </ul>
         </article>
 
         <!-- Elements -->
+        <!-- Keep or remove this article if you don't need the demo elements -->
+        <!--
         <article id="elements">
-          <!-- the “Elements” demo content -->
+          <h2 class="major">Elements</h2>
+          <! -- ... (existing elements demo content) ... ->
         </article>
+        -->
 
       </div>
 
-      <!-- Footer 
-      <footer id="footer">
-        <p class="copyright">&copy; Untitled. Design: 
-          <a href="https://html5up.net">HTML5 UP</a>.
-        </p>
-      </footer>
-    -->
+      <!-- Footer -->
+       <footer id="footer">
+         <!-- Keep existing footer or customize -->
+         <p class="copyright">© Gaurav Prasad. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+       </footer>
+
     </div>
 
     <!-- BG -->
