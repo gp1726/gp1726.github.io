@@ -46,6 +46,58 @@
             <!-- <img src="images/pic_work_header.jpg" alt="Work Projects Banner" /> -->
           </span>
 
+          <section>
+             <div class="about-container">
+               <div class="about-text">
+                 <h3>Realtime Raytracer (WIP)</h3>
+                <p>Real-time GPU raytracer built in C++17 with OpenGL 4.3 compute shaders. The CPU pipeline loads OBJ meshes, packs scene data into SSBOs, and builds a BVH using recursive median splits; the GPU handles per-pixel ray generation, BVH traversal, triangle intersections, shadow checks, and lighting before presenting through a fullscreen pass. Includes an interactive BVH wireframe visualizer for practical debugging of acceleration-structure behavior.</p>
+               </div>
+               <div class="about-image about-image-stacked">
+                 <img src="images/screenshot.png" alt="Raytracer render of reflective spheres">
+                 <img src="images/raytracedebug.jpg" alt="Raytracer BVH debug visualization">
+               </div>
+             </div>
+          </section>
+
+          <hr />
+
+          <section>
+             <div class="about-container">
+               <div class="about-text">
+                 <h3>Particle Simulation (C++ / OpenGL)</h3>
+                 <p>Built a real-time 2D particle simulation in C++17 and OpenGL 3.3 that renders up to 22,000 particles as GPU point sprites. The simulation updates particle motion with gravity, wall constraints, and optimized particle-particle collisions using a uniform grid to keep neighbor checks local and fast.</p>
+                 <p>Implemented a shader-based rendering path with custom vertex and fragment shaders, plus image-driven particle coloring from sampled RGBA textures for stylized output. Also added binary persistence to save and reload settled particle positions across runs.</p>
+                 <p><a href="images/particleRecording.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+               </div>
+               <div class="about-image">
+                 <video controls preload="metadata" style="width: 100%; height: auto;">
+                   <source src="images/particleRecording.mp4" type="video/mp4">
+                   Your browser does not support this video format.
+                 </video>
+               </div>
+             </div>
+          </section>
+
+          <hr />
+
+          <section>
+             <div class="about-container">
+               <div class="about-text">
+                 <h3>Computer Vision Project</h3>
+                 <p>Built a real-time kart racing analytics system in Python using OpenCV, Kalman filtering, and Hungarian data association. The pipeline tracks multiple karts from drone footage, estimates speed, computes sector/lap timing from line crossings, visualizes trajectories live, and exports lap telemetry to CSV for post-race analysis.</p>
+                 <p><a href="images/karts.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+               </div>
+               <div class="about-image">
+                 <video controls preload="metadata" style="width: 100%; height: auto;">
+                   <source src="images/karts.mp4" type="video/mp4">
+                   Your browser does not support this video format.
+                 </video>
+               </div>
+             </div>
+          </section>
+
+          <hr />
+
           <h2>Lap Logic - Sim Racing Telemetry Agent Report</h2>
           <div style="position: relative; width: 100%; height: 0; padding-top: 75%; /* Adjusted padding for potentially wider aspect ratio */ padding-bottom: 0;
                       box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em;
@@ -63,20 +115,6 @@
               </a>
           </p>
           <p>Project utilizing Python libraries like Numpy and Pandas to perform analysis of data collected from real time gameplay.</p>
-
-          <hr />
-
-          <section>
-             <div class="about-container">
-               <div class="about-text">
-                 <h3>Realtime Raytracer (WIP)</h3>
-                 <p>From-scratch raytracer with a CPU-built BVH (median split) feeding an OpenGL compute shader pipeline for intersections, Phong lighting, shadows, reflections, and FXAA. Currently adding textured materials and tuning the acceleration structure.</p>
-               </div>
-               <div class="about-image">
-                 <img src="images/screenshot.png" alt="Raytracer render of reflective spheres">
-               </div>
-             </div>
-          </section>
 
           <hr />
 
@@ -109,23 +147,8 @@
           <hr />
 
           <section>
-             <!-- Consider using headers consistently if desired -->
-             <h3>Data Lab - Computer Systems</h3>
-             <p>Applied bitwise operations to efficiently perform various functions.</p>
-          </section>
-
-          <hr /> <!-- Added HR for consistency -->
-
-          <section>
              <h3>Metallica Sentiment Analysis</h3>
              <p>Analyzed the evolution of sentiment in Metallica's music using Spotify API data combined with sentiment analysis tools like VADER and NLTK.</p>
-          </section>
-
-          <hr /> <!-- Added HR for consistency -->
-
-          <section>
-             <h3>Reinstalled Mod Manager Design Project</h3>
-             <p>Aimed to envision a better system for gamers to interact with and load mods for video games.</p>
           </section>
         </article>
 
