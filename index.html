@@ -40,7 +40,6 @@
         <!-- Work -->
         <article id="work">
           <h2 class="major">Work</h2>
-          <h3>Design, Analysis, Engineering</h3>
           <span class="image main">
             <!-- Optional: Add a relevant header image for the work section -->
             <!-- <img src="images/pic_work_header.jpg" alt="Work Projects Banner" /> -->
@@ -49,7 +48,26 @@
           <section>
              <div class="about-container">
                <div class="about-text">
-                 <h3>Realtime Raytracer (WIP)</h3>
+                 <h3>Fluid Simulation (C++ / OpenGL)</h3>
+                 <p>Built a real-time 2D fluid simulation in C++17 with OpenGL rendering and an SPH-style particle solver tuned for dense, interactive flow fields. The project currently targets large particle counts and uses a spatial partitioning grid to keep local neighbor lookups tractable while updating density, pressure, viscosity, and vorticity-driven motion.</p>
+                 <p>Added an ImGui control surface for live parameter tuning and used profiling plus stability audits to identify bottlenecks in the solver and render path, including hot neighbor loops and large per-frame buffer uploads. The result is a project focused not just on visuals, but on making a high-particle-count simulation debuggable and performant.</p>
+                 <p>Future plans include testing performance gains with compute shaders and also expanding to 3d and experimenting with various rendering techniques</p>
+                 <p><a href="images/v3.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+               </div>
+               <div class="about-image">
+                 <video controls preload="metadata" style="width: 100%; height: auto;">
+                   <source src="images/v3.mp4" type="video/mp4">
+                   Your browser does not support this video format.
+                 </video>
+               </div>
+             </div>
+          </section>
+
+          <hr />
+          <section>
+             <div class="about-container">
+               <div class="about-text">
+                 <h3>Realtime Raytracer</h3>
                 <p>Real-time GPU raytracer built in C++17 with OpenGL 4.3 compute shaders. The CPU pipeline loads OBJ meshes, packs scene data into SSBOs, and builds a BVH using recursive median splits; the GPU handles per-pixel ray generation, BVH traversal, triangle intersections, shadow checks, and lighting before presenting through a fullscreen pass. Includes an interactive BVH wireframe visualizer for practical debugging of acceleration-structure behavior.</p>
                </div>
                <div class="about-image about-image-stacked">
@@ -59,8 +77,8 @@
              </div>
           </section>
 
-          <hr />
 
+          <hr />
           <section>
              <div class="about-container">
                <div class="about-text">
@@ -79,6 +97,9 @@
           </section>
 
           <hr />
+
+
+
 
           <section>
              <div class="about-container">
