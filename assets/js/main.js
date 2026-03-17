@@ -14,6 +14,38 @@
 		$main = $('#main'),
 		$main_articles = $main.children('article');
 
+	function loadDeferredMedia($scope) {
+
+		$scope.find('img[data-src]').each(function() {
+
+			var $image = $(this);
+
+			if (!$image.attr('src'))
+				$image.attr('src', $image.attr('data-src'));
+
+			$image.removeAttr('data-src');
+
+		});
+
+		$scope.find('video').each(function() {
+
+			var video = this,
+				$video = $(video),
+				loaded = false;
+
+			$video.find('source[data-src]').each(function() {
+				this.src = this.getAttribute('data-src');
+				this.removeAttribute('data-src');
+				loaded = true;
+			});
+
+			if (loaded)
+				video.load();
+
+		});
+
+	}
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -29,6 +61,10 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+
+			(window.requestAnimationFrame || window.setTimeout)(function() {
+				$body.addClass('has-bg-image');
+			}, 0);
 		});
 
 	// Fix: Flexbox min-height bug on IE.
@@ -77,6 +113,8 @@
 				// No such article? Bail.
 					if ($article.length == 0)
 						return;
+
+				loadDeferredMedia($article);
 
 				// Handle lock.
 

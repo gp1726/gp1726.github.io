@@ -46,11 +46,16 @@
 				'transform #{_duration(article)} ease-in-out',
 				'filter #{_duration(article)} ease-in-out'
 			));
-			background-image:		url('../../images/bg.jpg');
 			background-position:	center;
 			background-size:		cover;
 			background-repeat:		no-repeat;
 			z-index: 1;
+		}
+
+		body.has-bg-image & {
+			&:after {
+				background-image: url('../../images/bg.jpg');
+			}
 		}
 
 		body.is-article-visible & {

@@ -55,8 +55,8 @@
                  <p><a href="images/v4.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
                </div>
                <div class="about-image">
-                 <video controls preload="metadata" style="width: 100%; height: auto;">
-                   <source src="images/v4.mp4" type="video/mp4">
+                 <video controls preload="none" style="width: 100%; height: auto;">
+                   <source data-src="images/v4.mp4" type="video/mp4">
                    Your browser does not support this video format.
                  </video>
                </div>
@@ -71,8 +71,8 @@
                 <p>Real-time GPU raytracer built in C++17 with OpenGL 4.3 compute shaders. The CPU pipeline loads OBJ meshes, packs scene data into SSBOs, and builds a BVH using recursive median splits; the GPU handles per-pixel ray generation, BVH traversal, triangle intersections, shadow checks, and lighting before presenting through a fullscreen pass. Includes an interactive BVH wireframe visualizer for practical debugging of acceleration-structure behavior.</p>
                </div>
                <div class="about-image about-image-stacked">
-                 <img src="images/screenshot.png" alt="Raytracer render of reflective spheres">
-                 <img src="images/raytracedebug.jpg" alt="Raytracer BVH debug visualization">
+                 <img data-src="images/screenshot.png" alt="Raytracer render of reflective spheres" loading="lazy" decoding="async">
+                 <img data-src="images/raytracedebug.jpg" alt="Raytracer BVH debug visualization" loading="lazy" decoding="async">
                </div>
              </div>
           </section>
@@ -88,8 +88,8 @@
                  <p><a href="images/smallparticleRecording.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
                </div>
                <div class="about-image">
-                 <video controls preload="metadata" style="width: 100%; height: auto;">
-                   <source src="images/smallparticleRecording.mp4" type="video/mp4">
+                 <video controls preload="none" style="width: 100%; height: auto;">
+                   <source data-src="images/smallparticleRecording.mp4" type="video/mp4">
                    Your browser does not support this video format.
                  </video>
                </div>
@@ -109,8 +109,8 @@
                  <p><a href="images/karts.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
                </div>
                <div class="about-image">
-                 <video controls preload="metadata" style="width: 100%; height: auto;">
-                   <source src="images/karts.mp4" type="video/mp4">
+                 <video controls preload="none" style="width: 100%; height: auto;">
+                   <source data-src="images/karts.mp4" type="video/mp4">
                    Your browser does not support this video format.
                  </video>
                </div>
@@ -146,7 +146,7 @@
                  <p>Utilized a decision tree model from the scikit-learn module in Python, achieving a 97.7% accuracy.</p>
                </div>
                <div class="about-image">
-                 <img src="images/dtport.png" alt="Decision Tree Visualization">
+                 <img data-src="images/dtport.png" alt="Decision Tree Visualization" loading="lazy" decoding="async">
                </div>
              </div>
           </section>
@@ -160,7 +160,7 @@
                  <p>Employed assembly code to reverse engineer inputs to functions to "defuse the bomb".</p>
                </div>
                <div class="about-image">
-                 <img src="images/bomblab.png" alt="Bomb Lab Code Snippet">
+                 <img data-src="images/bomblab.png" alt="Bomb Lab Code Snippet" loading="lazy" decoding="async">
                </div>
              </div>
           </section>
@@ -183,7 +183,7 @@
               </p>
             </div>
             <div class="about-image">
-              <img src="images/face.jpg" alt="Gaurav Prasad">
+              <img data-src="images/face.jpg" alt="Gaurav Prasad" loading="lazy" decoding="async">
             </div>
           </div>
         </article>
