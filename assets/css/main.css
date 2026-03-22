@@ -1165,7 +1165,7 @@ input, select, textarea {
 		}
 
 		body.has-bg-image #bg:after {
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg.webp");
 		}
 
 		body.is-article-visible #bg:after {
