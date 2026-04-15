@@ -20,15 +20,19 @@
         <div class="content">
           <div class="inner">
             <h1>Gaurav Prasad</h1>
-            <h2>Data Analyst</h2>
-            <p>Dedicated Information Science major with a minor in Computer Science. Skilled at data handling and analysis using tools like Python, SQL, Tableau and more. Seeking a role as a data analyst to learn and apply new skills to real world challenges.</p>
+            <h2 class="role-heading">
+              <span>Software Engineer</span>
+              <span class="role-heading__separator">|</span>
+              <span>Data Analyst</span>
+            </h2>
+            <p>Dedicated Information Science major with a minor in Computer Science. Skilled at data handling and analysis using tools like Python, SQL, Tableau. Also skilled in C++ for telemetry, simulation, graphics and embedded work. Seeking a role where I can leverage my skills to make meaningful contributions.</p>
           </div>
         </div>
         <nav>
           <ul>
             <li><a href="#work">Work</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li> <!-- Added Resume Link -->
+            <!-- <li><a href="#resume">Resume</a></li> <!-- Added Resume Link --> 
             <!--<li><a href="#elements">Elements</a></li>--> <!-- Optional: remove if not using -->
           </ul>
         </nav>
@@ -49,7 +53,7 @@
              <div class="about-container">
                <div class="about-text">
                  <h3>Fluid Simulation (C++ / OpenGL)</h3>
-                 <p>Built a real-time 2D fluid simulation in C++17 with OpenGL rendering and an SPH-style particle solver tuned for dense, interactive flow fields. The project currently targets large particle counts and uses a spatial partitioning grid to keep local neighbor lookups tractable while updating density, pressure, viscosity, and vorticity-driven motion.</p>
+                 <p>Built a real-time 2D fluid simulation in C++17 with OpenGL rendering and an SPH-style particle solver tuned for dense, interactive flow fields. The project currently targets large particle counts and uses a spatial partitioning grid to keep local neighbor lookups quick while updating density, pressure, viscosity, and vorticity-driven motion.</p>
                  <p>Added an ImGui control surface for live parameter tuning and used profiling plus stability audits to identify bottlenecks in the solver and render path, including hot neighbor loops and large per-frame buffer uploads. The result is a project focused not just on visuals, but on making a high-particle-count simulation debuggable and performant.</p>
                  <p>Future plans include testing performance gains with compute shaders and also expanding to 3d and experimenting with various rendering techniques</p>
                  <p><a href="images/v4.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
@@ -178,8 +182,10 @@
           <h2 class="major">About</h2>
           <div class="about-container">
             <div class="about-text">
-              <p>Hi, I am a budding data analyst who has devoted a lot of time to computer science topics as well. I love being able to investigate the data in order to solve problems or improve efficiency of operations. <br><br> <!-- Added line break for spacing -->
-                I was raised in Washington State and am graduating from the University of Colorado at Boulder in May 2025. I am a member of our school frisbee team which competes in the College National Championship every year, Mamabird Ultimate. 
+              <p>I am a student from the University of Colorado at Boulder, with a B.S. in Information Science and a minor in Computer Science. I am most experienced with statistical data analysis using tools like SQL, Python and creating dashboards with PowerBI to effectively communicate the results.<br><br> <!-- Added line break for spacing -->
+I have been enjoying diving into performant C++ and doing graphical programming. I enjoy making functional applications and getting to watch its performance improve as I take steps to optimize it. I use my data oriented mindset to tackle problems efficiently from the outset.<br> <br>
+
+I was a member of the nationally contending Colorado Mamabird Ultimate Frisbee team for 3 years which highlighted the value of effective communication and dedication to a goal. My time on this team has given me a strong foundation of teamwork and leadership and accountability to take forward.
               </p>
             </div>
             <div class="about-image">
@@ -189,95 +195,95 @@
         </article>
 
         <!-- Resume (NEW ARTICLE) -->
-        <article id="resume">
-          <h2 class="major">Resume</h2>
-
-          <!-- Download Button -->
-          <ul class="actions">
-            <li>
-              <!-- IMPORTANT: Make sure this path is correct! -->
-              <a
-                href="assets/pdf/Prasad_Gaurav_Resume.pdf"
-                download="Gaurav_Prasad_Resume.pdf"
-                class="button primary icon solid fa-download" <!-- Added icon -->
-              >
-                Download Resume
-              </a>
-            </li>
-          </ul>
-
-          <!-- Resume Content -->
-          <div class="container"> <!-- Optional container div -->
-            <header class="resume-header">
-              <!-- Name is already prominent on the page, but keep if desired -->
-              <!-- <h1>Gaurav Prasad</h1> -->
-              <p style="text-align: center;"> <!-- Centered contact info -->
-                <a href="mailto:Gaurav7210@outlook.com">Gaurav7210@outlook.com</a> |
-                <a href="https://prasadgaurav40.wixsite.com/gauravprasad" target="_blank" rel="noopener">Portfolio</a>
-                | <a href="https://www.linkedin.com/in/gauravprasad111/" target="_blank" rel="noopener">LinkedIn</a>
-              </p>
-            </header>
-
-            <div class="section">
-              <h3>Profile</h3> <!-- Changed to h3 for better hierarchy within the article -->
-              <p>Dedicated Information Science major with a passion for uncovering and solving problems. Eager to learn and apply analytical skills in Python, SQL for data driven decision making.</p>
-            </div>
-
-            <div class="section">
-              <h3>Education</h3>
-              <p>
-                <strong>University of Colorado at Boulder</strong> (Graduating May 2025)<br>
-                B.S in Information Science | Minor in Computer Science <br>
-                GPA: 3.6
-              </p>
-            </div>
-
-            <div class="section">
-              <h3>Skills</h3>
-              <ul>
-                <li><strong>Coding:</strong> Python, SQL, C, Java, HTML, OOP</li>
-                <li><strong>Analysis:</strong> A/B testing, Regression, Descriptive statistics, Inferential statistics, Machine learning, Sentiment analysis</li>
-                <li><strong>Visualization:</strong> PowerBI, Tableau, Matplotlib, Altair</li>
-                 <li><strong>Tools & Platforms:</strong> Git, Jupyter Notebooks, VS Code, Google Cloud Platform (Basic), AWS (Basic)</li> <!-- Example Addition -->
-              </ul>
-            </div>
-
-            <div class="section">
-              <h3>Experience</h3>
-              <p><strong>FAS 360 Summer Internship</strong> | Summer 2025<br> <!-- Adjusted date format -->
-              <span style="font-style: italic; color: #555;">GSA - Professional Services and Human Capital</span></p>
-              <ul>
-                <li>Participated in a 12-week internship program with GSA’s Professional Services and Human Capital team, resulting in a return offer.</li> <!-- Reworded slightly -->
-                <li>Co-facilitated two leadership training sessions for Multiple Award Schedule University instructors.</li>
-                <li>Shadowed four established data analysts, gaining insights into real-world data analysis workflows and challenges.</li>
-              </ul>
-
-              <p><strong>Visualization Consultant</strong><br> <!-- Add Dates if available -->
-              <span style="font-style: italic; color: #555;">Inclusive America</span></p>
-              <ul>
-                <li>Developed two interactive dashboards using Tableau to visualize diversity metrics across US state governments.</li>
-                <li>Authored comprehensive documentation enabling replication of dashboards for the remaining 48 states.</li>
-              </ul>
-
-              <p><strong>Tech Sales Associate</strong> | Jan 2022 – Apr 2022<br>
-              <span style="font-style: italic; color: #555;">Target</span></p>
-              <ul>
-                <li>Provided technical product support and recommendations to 10+ customers daily.</li>
-                <li>Managed stock organization and inventory for the electronics department.</li>
-                <li>Resolved customer technical issues, contributing to a measured 2% improvement in department satisfaction scores.</li>
-              </ul>
-            </div>
-
-            <div class="section">
-              <h3>Projects</h3>
-              <p><strong>Lap Logic:</strong> Sim Racing telemetry agent designed for beginners to analytically improve lap times using Python (Pandas, NumPy). Successfully demonstrated improvement in beginner lap times by up to 8%. <a href="#work">[See Above]</a></p> <!-- Link back to work section -->
-              <p><strong>Metallica Sentiment Analysis:</strong> Analyzed lyrical evolution and sentiment trends in the band's discography using Spotify API, NLTK, and VADER. <a href="#work">[See Above]</a></p>
-              <p><strong>ML Flower Classification:</strong> Implemented a Decision Tree classifier using Scikit-Learn in Python to predict flower species, achieving 97.7% accuracy on the test dataset. <a href="#work">[See Above]</a></p>
-              <!-- Add links to GitHub repos if available -->
-              <!-- <p><strong>Project Name:</strong> Description <a href="GITHUB_LINK" target="_blank" rel="noopener">[GitHub]</a></p> -->
-            </div>
-          </div>
-        </article>
+        <!-- <article id="resume"> -->
+        <!--   <h2 class="major">Resume</h2> -->
+        <!---->
+        <!--   <!-- Download Button --> -->
+        <!--   <ul class="actions"> -->
+        <!--     <li> -->
+        <!--       <!-- IMPORTANT: Make sure this path is correct! --> -->
+        <!--       <a -->
+        <!--         href="assets/pdf/Prasad_Gaurav_Resume.pdf" -->
+        <!--         download="Gaurav_Prasad_Resume.pdf" -->
+        <!--         class="button primary icon solid fa-download" <!-- Added icon --> -->
+        <!--       > -->
+        <!--         Download Resume -->
+        <!--       </a> -->
+        <!--     </li> -->
+        <!--   </ul> -->
+        <!---->
+        <!--   <!-- Resume Content --> -->
+        <!--   <div class="container"> <!-- Optional container div --> -->
+        <!--     <header class="resume-header"> -->
+        <!--       <!-- Name is already prominent on the page, but keep if desired --> -->
+        <!--       <!-- <h1>Gaurav Prasad</h1> --> -->
+        <!--       <p style="text-align: center;"> <!-- Centered contact info --> -->
+        <!--         <a href="mailto:Gaurav7210@outlook.com">Gaurav7210@outlook.com</a> | -->
+        <!--         <a href="https://prasadgaurav40.wixsite.com/gauravprasad" target="_blank" rel="noopener">Portfolio</a> -->
+        <!--         | <a href="https://www.linkedin.com/in/gauravprasad111/" target="_blank" rel="noopener">LinkedIn</a> -->
+        <!--       </p> -->
+        <!--     </header> -->
+        <!---->
+        <!--     <div class="section"> -->
+        <!--       <h3>Profile</h3> <!-- Changed to h3 for better hierarchy within the article --> -->
+        <!--       <p>Dedicated Information Science major with a passion for uncovering and solving problems. Eager to learn and apply analytical skills in Python, SQL for data driven decision making.</p> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="section"> -->
+        <!--       <h3>Education</h3> -->
+        <!--       <p> -->
+        <!--         <strong>University of Colorado at Boulder</strong> (Graduating May 2025)<br> -->
+        <!--         B.S in Information Science | Minor in Computer Science <br> -->
+        <!--         GPA: 3.6 -->
+        <!--       </p> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="section"> -->
+        <!--       <h3>Skills</h3> -->
+        <!--       <ul> -->
+        <!--         <li><strong>Coding:</strong> Python, SQL, C, Java, HTML, OOP</li> -->
+        <!--         <li><strong>Analysis:</strong> A/B testing, Regression, Descriptive statistics, Inferential statistics, Machine learning, Sentiment analysis</li> -->
+        <!--         <li><strong>Visualization:</strong> PowerBI, Tableau, Matplotlib, Altair</li> -->
+        <!--          <li><strong>Tools & Platforms:</strong> Git, Jupyter Notebooks, VS Code, Google Cloud Platform (Basic), AWS (Basic)</li> <!-- Example Addition --> -->
+        <!--       </ul> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="section"> -->
+        <!--       <h3>Experience</h3> -->
+        <!--       <p><strong>FAS 360 Summer Internship</strong> | Summer 2025<br> <!-- Adjusted date format --> -->
+        <!--       <span style="font-style: italic; color: #555;">GSA - Professional Services and Human Capital</span></p> -->
+        <!--       <ul> -->
+        <!--         <li>Participated in a 12-week internship program with GSA’s Professional Services and Human Capital team, resulting in a return offer.</li> <!-- Reworded slightly --> -->
+        <!--         <li>Co-facilitated two leadership training sessions for Multiple Award Schedule University instructors.</li> -->
+        <!--         <li>Shadowed four established data analysts, gaining insights into real-world data analysis workflows and challenges.</li> -->
+        <!--       </ul> -->
+        <!---->
+        <!--       <p><strong>Visualization Consultant</strong><br> <!-- Add Dates if available --> -->
+        <!--       <span style="font-style: italic; color: #555;">Inclusive America</span></p> -->
+        <!--       <ul> -->
+        <!--         <li>Developed two interactive dashboards using Tableau to visualize diversity metrics across US state governments.</li> -->
+        <!--         <li>Authored comprehensive documentation enabling replication of dashboards for the remaining 48 states.</li> -->
+        <!--       </ul> -->
+        <!---->
+        <!--       <p><strong>Tech Sales Associate</strong> | Jan 2022 – Apr 2022<br> -->
+        <!--       <span style="font-style: italic; color: #555;">Target</span></p> -->
+        <!--       <ul> -->
+        <!--         <li>Provided technical product support and recommendations to 10+ customers daily.</li> -->
+        <!--         <li>Managed stock organization and inventory for the electronics department.</li> -->
+        <!--         <li>Resolved customer technical issues, contributing to a measured 2% improvement in department satisfaction scores.</li> -->
+        <!--       </ul> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="section"> -->
+        <!--       <h3>Projects</h3> -->
+        <!--       <p><strong>Lap Logic:</strong> Sim Racing telemetry agent designed for beginners to analytically improve lap times using Python (Pandas, NumPy). Successfully demonstrated improvement in beginner lap times by up to 8%. <a href="#work">[See Above]</a></p> <!-- Link back to work section --> -->
+        <!--       <p><strong>Metallica Sentiment Analysis:</strong> Analyzed lyrical evolution and sentiment trends in the band's discography using Spotify API, NLTK, and VADER. <a href="#work">[See Above]</a></p> -->
+        <!--       <p><strong>ML Flower Classification:</strong> Implemented a Decision Tree classifier using Scikit-Learn in Python to predict flower species, achieving 97.7% accuracy on the test dataset. <a href="#work">[See Above]</a></p> -->
+        <!--       <!-- Add links to GitHub repos if available --> -->
+        <!--       <!-- <p><strong>Project Name:</strong> Description <a href="GITHUB_LINK" target="_blank" rel="noopener">[GitHub]</a></p> --> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </article> -->
 
         <!-- Elements -->
         <!-- Keep or remove this article if you don't need the demo elements -->
@@ -293,19 +299,22 @@
       <!-- Footer -->
        <footer id="footer">
          <!-- Keep existing footer or customize -->
-         <p class="copyright">© Gaurav Prasad. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+         <!-- <p class="copyright">© Gaurav Prasad. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
        </footer>
 
     </div>
 
     <!-- BG -->
-    <div id="bg"></div>
+    <div id="bg">
+      <canvas id="background-canvas" aria-hidden="true"></canvas>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
+    <script src="assets/js/background.js"></script>
     <script src="assets/js/main.js"></script>
 
   </body>

@@ -94,6 +94,27 @@
 		letter-spacing: _font(letter-spacing-heading);
 	}
 
+	.role-heading {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+		align-items: center;
+		column-gap: 0.75rem;
+		width: 100%;
+		text-align: center;
+
+		span:first-child {
+			text-align: right;
+		}
+
+		span:last-child {
+			text-align: left;
+		}
+	}
+
+	.role-heading__separator {
+		text-align: center;
+	}
+
 	h3 {
 		font-size: 1rem;
 	}
