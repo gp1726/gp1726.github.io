@@ -105,6 +105,45 @@
 		var	delay = 325,
 			locked = false;
 
+		var	work_project_ids = [
+			'mpm-sim',
+			'fluid-simulation',
+			'raytracer',
+			'particle-simulation',
+			'computer-vision',
+			'lap-logic',
+ 		];
+
+		function isWorkProject(id) {
+
+			return work_project_ids.indexOf(id) !== -1;
+
+		}
+
+		function scrollToWorkProject(id) {
+
+			var element = document.getElementById(id);
+
+			if (!element)
+				return;
+
+			element.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+
+		}
+
+		function showWorkProject(id, initial) {
+
+			$main._show('work', initial);
+
+			setTimeout(function() {
+				scrollToWorkProject(id);
+			}, initial ? 50 : delay + 100);
+
+		}
+
 		// Methods.
 			$main._show = function(id, initial) {
 
@@ -373,6 +412,8 @@
 
 			$window.on('hashchange', function(event) {
 
+				var id = location.hash.substr(1);
+
 				// Empty hash?
 					if (location.hash == ''
 					||	location.hash == '#') {
@@ -394,7 +435,19 @@
 							event.stopPropagation();
 
 						// Show article.
-							$main._show(location.hash.substr(1));
+							$main._show(id);
+
+					}
+
+				// Otherwise, check for a matching work project.
+					else if (isWorkProject(id)) {
+
+						// Prevent default.
+							event.preventDefault();
+							event.stopPropagation();
+
+						// Show work article and scroll to project.
+							showWorkProject(id);
 
 					}
 
@@ -433,7 +486,14 @@
 				if (location.hash != ''
 				&&	location.hash != '#')
 					$window.on('load', function() {
-						$main._show(location.hash.substr(1), true);
+
+						var id = location.hash.substr(1);
+
+						if (isWorkProject(id))
+							showWorkProject(id, true);
+						else
+							$main._show(id, true);
+
 					});
 
 })(jQuery);

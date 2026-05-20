@@ -25,7 +25,7 @@
               <span class="role-heading__separator">|</span>
               <span>Data Analyst</span>
             </h2>
-            <p>Dedicated Information Science major with a minor in Computer Science. Skilled at data handling and analysis using tools like Python, SQL, Tableau. Also skilled in C++ for telemetry, simulation, graphics and embedded work. Seeking a role where I can leverage my skills to make meaningful contributions.</p>
+<p>Information Science major with a Computer Science minor focused on building C++ projects in simulation, graphics, telemetry, and real-time systems. My work combines performance optimization, data processing, and interactive visualization, supported by experience with Python, SQL, and analysis tools. I’m seeking opportunities to contribute to challenging engineering problems and build software that has real impact.</p>
           </div>
         </div>
         <nav>
@@ -49,11 +49,52 @@
             <!-- <img src="images/pic_work_header.jpg" alt="Work Projects Banner" /> -->
           </span>
 
-          <section>
+          <section id="mpm-sim">
+            <div class="about-container">
+              <div class="about-text">
+                <h3>Parallel MPM Gravity Sim</h3>
+<p>Built a real-time 2D Material Point Method
+  fluid simulation in C++20 with OpenGL
+  rendering, using APIC-style particle-grid
+  transfers and blended PIC/FLIP velocity
+  updates for dense, interactive particle
+  motion.</p>
+
+  <p>Implemented a high-resolution grid solver
+  with tiled particle binning, parallelized P2G/
+  G2P passes, pressure and density handling,
+  buoyancy, boundary damping, and stability
+  checks to support large particle counts while
+  keeping the simulation responsive.</p>
+
+  <p>Added particle-sourced coarse-grid gravity,
+  temperature and density-based material
+  spawning, radiance-style background rendering,
+  and frame timing instrumentation to make the
+  simulation easier to debug, tune, and
+  extend.</p>
+
+  <p>Future plans include improving the gravity and light
+  approximation with cascades, expanding temperature-driven
+  phase behavior, and experimenting with compute
+  shaders, 3D simulation, and additional
+  rendering techniques.</p>
+                 <p><a href="images/mpmvid.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+        </div>
+               <div class="about-image">
+                 <video controls preload="none" style="width: 100%; height: auto;">
+                   <source data-src="images/mpmvid.mp4" type="video/mp4">
+                   Your browser does not support this video format.
+                 </video>
+               </div>
+    </div>
+  </section>
+          <hr />
+          <section id="fluid-simulation">
              <div class="about-container">
                <div class="about-text">
-                 <h3>Fluid Simulation (C++ / OpenGL)</h3>
-                 <p>Built a real-time 2D fluid simulation in C++17 with OpenGL rendering and an SPH-style particle solver tuned for dense, interactive flow fields. The project currently targets large particle counts and uses a spatial partitioning grid to keep local neighbor lookups quick while updating density, pressure, viscosity, and vorticity-driven motion.</p>
+                 <h3>"Wind Tunnel" Simulation (C++ / OpenGL)</h3>
+                 <p>Built a 2D fluid simulation in C++17 with OpenGL rendering and an SPH-style particle solver tuned for dense, interactive flow fields. The project currently targets large particle counts and uses a spatial partitioning grid to keep local neighbor lookups quick while updating density, pressure, viscosity, and vorticity-driven motion.</p>
                  <p>Added an ImGui control surface for live parameter tuning and used profiling plus stability audits to identify bottlenecks in the solver and render path, including hot neighbor loops and large per-frame buffer uploads. The result is a project focused not just on visuals, but on making a high-particle-count simulation debuggable and performant.</p>
                  <p>Future plans include testing performance gains with compute shaders and also expanding to 3d and experimenting with various rendering techniques</p>
                  <p><a href="images/v4.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
@@ -68,7 +109,7 @@
           </section>
 
           <hr />
-          <section>
+          <section id="raytracer">
              <div class="about-container">
                <div class="about-text">
                  <h3>Realtime Raytracer</h3>
@@ -83,10 +124,10 @@
 
 
           <hr />
-          <section>
+          <section id="particle-simulation">
              <div class="about-container">
                <div class="about-text">
-                 <h3>Particle Simulation (C++ / OpenGL)</h3>
+                 <h3>Particle Engine (C++ / OpenGL)</h3>
                  <p>Built a real-time 2D particle simulation in C++17 and OpenGL 3.3 that renders up to 22,000 particles as GPU point sprites. The simulation updates particle motion with gravity, wall constraints, and optimized particle-particle collisions using a uniform grid to keep neighbor checks local and fast.</p>
                  <p>Implemented a shader-based rendering path with custom vertex and fragment shaders, plus image-driven particle coloring from sampled RGBA textures for stylized output. Also added binary persistence to save and reload settled particle positions across runs.</p>
                  <p><a href="images/smallparticleRecording.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
@@ -105,7 +146,7 @@
 
 
 
-          <section>
+          <section id="computer-vision">
              <div class="about-container">
                <div class="about-text">
                  <h3>Computer Vision Project</h3>
@@ -123,7 +164,7 @@
 
           <hr />
 
-          <h2>Lap Logic - Sim Racing Telemetry Agent Report</h2>
+          <h2 id="lap-logic">Lap Logic - Sim Racing Telemetry Agent Report</h2>
           <div style="position: relative; width: 100%; height: 0; padding-top: 75%; /* Adjusted padding for potentially wider aspect ratio */ padding-bottom: 0;
                       box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em;
                       overflow: hidden; border-radius: 8px; will-change: transform;">
@@ -141,158 +182,39 @@
           </p>
           <p>Project utilizing Python libraries like Numpy and Pandas to perform analysis of data collected from real time gameplay.</p>
 
-          <hr />
 
-          <section>
-             <div class="about-container"> <!-- Reusing class name, ensure CSS is general or adjust -->
-               <div class="about-text">
-                 <h3>Flower Classification - Decision Tree</h3>
-                 <p>Utilized a decision tree model from the scikit-learn module in Python, achieving a 97.7% accuracy.</p>
-               </div>
-               <div class="about-image">
-                 <img data-src="images/dtport.png" alt="Decision Tree Visualization" loading="lazy" decoding="async">
-               </div>
-             </div>
-          </section>
+   
+          </article>
 
-          <hr />
 
-          <section>
-             <div class="about-container">
-               <div class="about-text">
-                 <h3>Bomb Lab - Computer Systems</h3>
-                 <p>Employed assembly code to reverse engineer inputs to functions to "defuse the bomb".</p>
-               </div>
-               <div class="about-image">
-                 <img data-src="images/bomblab.png" alt="Bomb Lab Code Snippet" loading="lazy" decoding="async">
-               </div>
-             </div>
-          </section>
+   
 
-          <hr />
 
-          <section>
-             <h3>Metallica Sentiment Analysis</h3>
-             <p>Analyzed the evolution of sentiment in Metallica's music using Spotify API data combined with sentiment analysis tools like VADER and NLTK.</p>
-          </section>
-        </article>
 
         <!-- About Section -->
-        <article id="about">
-          <h2 class="major">About</h2>
-          <div class="about-container">
-            <div class="about-text">
-              <p>I am a student from the University of Colorado at Boulder, with a B.S. in Information Science and a minor in Computer Science. I am most experienced with statistical data analysis using tools like SQL, Python and creating dashboards with PowerBI to effectively communicate the results.<br><br> <!-- Added line break for spacing -->
-I have been enjoying diving into performant C++ and doing graphical programming. I enjoy making functional applications and getting to watch its performance improve as I take steps to optimize it. I use my data oriented mindset to tackle problems efficiently from the outset.<br> <br>
+<article id="about">
+  <h2 class="major">About</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        I have been enjoying diving into performant C++ and doing graphical programming. I enjoy making functional applications and getting to watch its performance improve as I take steps to optimize it. I use my data oriented mindset to tackle problems efficiently from the outset.
+        <br><br>
 
-I was a member of the nationally contending Colorado Mamabird Ultimate Frisbee team for 3 years which highlighted the value of effective communication and dedication to a goal. My time on this team has given me a strong foundation of teamwork and leadership and accountability to take forward.
-              </p>
-            </div>
-            <div class="about-image">
-              <img data-src="images/face.jpg" alt="Gaurav Prasad" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </article>
+        I was a member of the nationally contending Colorado Mamabird Ultimate Frisbee team for 3 years which highlighted the value of effective communication and dedication to a goal. My time on this team has given me a strong foundation of teamwork and leadership and accountability to take forward.
+      </p>
 
-        <!-- Resume (NEW ARTICLE) -->
-        <!-- <article id="resume"> -->
-        <!--   <h2 class="major">Resume</h2> -->
-        <!---->
-        <!--   <!-- Download Button --> -->
-        <!--   <ul class="actions"> -->
-        <!--     <li> -->
-        <!--       <!-- IMPORTANT: Make sure this path is correct! --> -->
-        <!--       <a -->
-        <!--         href="assets/pdf/Prasad_Gaurav_Resume.pdf" -->
-        <!--         download="Gaurav_Prasad_Resume.pdf" -->
-        <!--         class="button primary icon solid fa-download" <!-- Added icon --> -->
-        <!--       > -->
-        <!--         Download Resume -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!---->
-        <!--   <!-- Resume Content --> -->
-        <!--   <div class="container"> <!-- Optional container div --> -->
-        <!--     <header class="resume-header"> -->
-        <!--       <!-- Name is already prominent on the page, but keep if desired --> -->
-        <!--       <!-- <h1>Gaurav Prasad</h1> --> -->
-        <!--       <p style="text-align: center;"> <!-- Centered contact info --> -->
-        <!--         <a href="mailto:Gaurav7210@outlook.com">Gaurav7210@outlook.com</a> | -->
-        <!--         <a href="https://prasadgaurav40.wixsite.com/gauravprasad" target="_blank" rel="noopener">Portfolio</a> -->
-        <!--         | <a href="https://www.linkedin.com/in/gauravprasad111/" target="_blank" rel="noopener">LinkedIn</a> -->
-        <!--       </p> -->
-        <!--     </header> -->
-        <!---->
-        <!--     <div class="section"> -->
-        <!--       <h3>Profile</h3> <!-- Changed to h3 for better hierarchy within the article --> -->
-        <!--       <p>Dedicated Information Science major with a passion for uncovering and solving problems. Eager to learn and apply analytical skills in Python, SQL for data driven decision making.</p> -->
-        <!--     </div> -->
-        <!---->
-        <!--     <div class="section"> -->
-        <!--       <h3>Education</h3> -->
-        <!--       <p> -->
-        <!--         <strong>University of Colorado at Boulder</strong> (Graduating May 2025)<br> -->
-        <!--         B.S in Information Science | Minor in Computer Science <br> -->
-        <!--         GPA: 3.6 -->
-        <!--       </p> -->
-        <!--     </div> -->
-        <!---->
-        <!--     <div class="section"> -->
-        <!--       <h3>Skills</h3> -->
-        <!--       <ul> -->
-        <!--         <li><strong>Coding:</strong> Python, SQL, C, Java, HTML, OOP</li> -->
-        <!--         <li><strong>Analysis:</strong> A/B testing, Regression, Descriptive statistics, Inferential statistics, Machine learning, Sentiment analysis</li> -->
-        <!--         <li><strong>Visualization:</strong> PowerBI, Tableau, Matplotlib, Altair</li> -->
-        <!--          <li><strong>Tools & Platforms:</strong> Git, Jupyter Notebooks, VS Code, Google Cloud Platform (Basic), AWS (Basic)</li> <!-- Example Addition --> -->
-        <!--       </ul> -->
-        <!--     </div> -->
-        <!---->
-        <!--     <div class="section"> -->
-        <!--       <h3>Experience</h3> -->
-        <!--       <p><strong>FAS 360 Summer Internship</strong> | Summer 2025<br> <!-- Adjusted date format --> -->
-        <!--       <span style="font-style: italic; color: #555;">GSA - Professional Services and Human Capital</span></p> -->
-        <!--       <ul> -->
-        <!--         <li>Participated in a 12-week internship program with GSA’s Professional Services and Human Capital team, resulting in a return offer.</li> <!-- Reworded slightly --> -->
-        <!--         <li>Co-facilitated two leadership training sessions for Multiple Award Schedule University instructors.</li> -->
-        <!--         <li>Shadowed four established data analysts, gaining insights into real-world data analysis workflows and challenges.</li> -->
-        <!--       </ul> -->
-        <!---->
-        <!--       <p><strong>Visualization Consultant</strong><br> <!-- Add Dates if available --> -->
-        <!--       <span style="font-style: italic; color: #555;">Inclusive America</span></p> -->
-        <!--       <ul> -->
-        <!--         <li>Developed two interactive dashboards using Tableau to visualize diversity metrics across US state governments.</li> -->
-        <!--         <li>Authored comprehensive documentation enabling replication of dashboards for the remaining 48 states.</li> -->
-        <!--       </ul> -->
-        <!---->
-        <!--       <p><strong>Tech Sales Associate</strong> | Jan 2022 – Apr 2022<br> -->
-        <!--       <span style="font-style: italic; color: #555;">Target</span></p> -->
-        <!--       <ul> -->
-        <!--         <li>Provided technical product support and recommendations to 10+ customers daily.</li> -->
-        <!--         <li>Managed stock organization and inventory for the electronics department.</li> -->
-        <!--         <li>Resolved customer technical issues, contributing to a measured 2% improvement in department satisfaction scores.</li> -->
-        <!--       </ul> -->
-        <!--     </div> -->
-        <!---->
-        <!--     <div class="section"> -->
-        <!--       <h3>Projects</h3> -->
-        <!--       <p><strong>Lap Logic:</strong> Sim Racing telemetry agent designed for beginners to analytically improve lap times using Python (Pandas, NumPy). Successfully demonstrated improvement in beginner lap times by up to 8%. <a href="#work">[See Above]</a></p> <!-- Link back to work section --> -->
-        <!--       <p><strong>Metallica Sentiment Analysis:</strong> Analyzed lyrical evolution and sentiment trends in the band's discography using Spotify API, NLTK, and VADER. <a href="#work">[See Above]</a></p> -->
-        <!--       <p><strong>ML Flower Classification:</strong> Implemented a Decision Tree classifier using Scikit-Learn in Python to predict flower species, achieving 97.7% accuracy on the test dataset. <a href="#work">[See Above]</a></p> -->
-        <!--       <!-- Add links to GitHub repos if available --> -->
-        <!--       <!-- <p><strong>Project Name:</strong> Description <a href="GITHUB_LINK" target="_blank" rel="noopener">[GitHub]</a></p> --> -->
-        <!--     </div> -->
-        <!--   </div> -->
-        <!-- </article> -->
+      <a href="assets/pdf/Resume_GP.pdf" class="resume-button" download>
+        Download Resume
+      </a>
+    </div>
 
-        <!-- Elements -->
-        <!-- Keep or remove this article if you don't need the demo elements -->
-        <!--
-        <article id="elements">
-          <h2 class="major">Elements</h2>
-          <! -- ... (existing elements demo content) ... ->
-        </article>
-        -->
+    <div class="about-image">
+      <img data-src="images/face.jpg" alt="Gaurav Prasad" loading="lazy" decoding="async">
+    </div>
+  </div>
+</article>
+
+
 
       </div>
 
