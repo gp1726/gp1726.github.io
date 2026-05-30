@@ -67,23 +67,22 @@
   checks to support large particle counts while
   keeping the simulation responsive.</p>
 
-  <p>Added particle-sourced coarse-grid gravity,
+  <p>Added particle-sourced pseudo-gravity cascades,
   temperature and density-based material
-  spawning, radiance-style background rendering,
+  spawning, constant time Radiance Cascades global illumination,
   and frame timing instrumentation to make the
   simulation easier to debug, tune, and
   extend.</p>
 
-  <p>Future plans include improving the gravity and light
-  approximation with cascades, expanding temperature-driven
-  phase behavior, and experimenting with compute
+  <p>Future plans include expanding temperature-driven
+  phase behavior, and implementing compute
   shaders, 3D simulation, and additional
-  rendering techniques.</p>
-                 <p><a href="images/mpmvid.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+  rendering techniques. I also want to try to make the simulation larger scale with a quadtree based dynamic grid builder instead of the static grid.</p>
+                 <p><a href="images/particle_portfolio_1080p_vertical_cropped.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
         </div>
                <div class="about-image">
                  <video controls preload="none" style="width: 100%; height: auto;">
-                   <source data-src="images/mpmvid.mp4" type="video/mp4">
+                   <source data-src="images/particle_portfolio_1080p_vertical_cropped.mp4" type="video/mp4">
                    Your browser does not support this video format.
                  </video>
                </div>
