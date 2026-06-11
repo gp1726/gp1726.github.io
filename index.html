@@ -61,7 +61,7 @@
   motion.</p>
 
   <p>Implemented a high-resolution grid solver
-  with tiled particle binning, parallelized P2G/
+  with parallel tiled particle binning, parallelized P2G/
   G2P passes, pressure and density handling,
   buoyancy, boundary damping, and stability
   checks to support large particle counts while
@@ -74,15 +74,16 @@
   simulation easier to debug, tune, and
   extend.</p>
 
+  <p>As of June 11th 2026, Radiance Cascades have been moved to being solved through compute shaders allowing for significantly increased fidelity of the radiance field.</p>
+
   <p>Future plans include expanding temperature-driven
-  phase behavior, and implementing compute
-  shaders, 3D simulation, and additional
-  rendering techniques. I also want to try to make the simulation larger scale with a quadtree based dynamic grid builder instead of the static grid.</p>
-                 <p><a href="images/particle_portfolio_1080p_vertical_cropped.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+  phase behavior, 3D simulation, and additional
+  rendering techniques.</p>
+                 <p><a href="images/rcVertical.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
         </div>
                <div class="about-image">
                  <video controls preload="none" style="width: 100%; height: auto;">
-                   <source data-src="images/particle_portfolio_1080p_vertical_cropped.mp4" type="video/mp4">
+                   <source data-src="images/rcVertical.mp4" type="video/mp4">
                    Your browser does not support this video format.
                  </video>
                </div>
