@@ -79,13 +79,38 @@
   <p>Future plans include expanding temperature-driven
   phase behavior, 3D simulation, and additional
   rendering techniques.</p>
-                 <p><a href="images/rcVertical.mp4" target="_blank" rel="noopener">Open recording directly</a></p>
+                 <p>
+                   Open recordings directly:
+                   <a href="images/rcVid1.mp4" target="_blank" rel="noopener">clip 1</a>
+                   /
+                   <a href="images/rcVid2.mp4" target="_blank" rel="noopener">clip 2</a>
+                 </p>
         </div>
                <div class="about-image">
-                 <video controls preload="none" style="width: 100%; height: auto;">
-                   <source data-src="images/rcVertical.mp4" type="video/mp4">
-                   Your browser does not support this video format.
-                 </video>
+                 <div class="project-carousel" data-carousel>
+                   <div class="project-carousel__viewport">
+                     <div class="project-carousel__slide is-active" data-carousel-slide>
+                       <video controls preload="none">
+                         <source data-src="images/rcVid1.mp4" type="video/mp4">
+                         Your browser does not support this video format.
+                       </video>
+                     </div>
+                     <div class="project-carousel__slide" data-carousel-slide>
+                       <video controls preload="none">
+                         <source data-src="images/rcVid2.mp4" type="video/mp4">
+                         Your browser does not support this video format.
+                       </video>
+                     </div>
+                   </div>
+                   <div class="project-carousel__controls" aria-label="MPM project recordings">
+                     <button class="project-carousel__button" type="button" data-carousel-prev aria-label="Previous recording"><span aria-hidden="true">&lsaquo;</span></button>
+                     <div class="project-carousel__dots">
+                       <button class="project-carousel__dot is-active" type="button" data-carousel-dot aria-label="Show clip 1"></button>
+                       <button class="project-carousel__dot" type="button" data-carousel-dot aria-label="Show clip 2"></button>
+                     </div>
+                     <button class="project-carousel__button" type="button" data-carousel-next aria-label="Next recording"><span aria-hidden="true">&rsaquo;</span></button>
+                   </div>
+                 </div>
                </div>
     </div>
   </section>

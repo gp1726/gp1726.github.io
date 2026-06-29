@@ -46,6 +46,90 @@
 
 	}
 
+	function initCarousels($scope) {
+
+		$scope.find('[data-carousel]').each(function() {
+
+			var $carousel = $(this),
+				$slides = $carousel.find('[data-carousel-slide]'),
+				$dots = $carousel.find('[data-carousel-dot]'),
+				activeIndex = $slides.index($slides.filter('.is-active').first());
+
+			if ($carousel.data('carousel-initialized'))
+				return;
+
+			if ($slides.length < 2)
+				return;
+
+			if (activeIndex < 0)
+				activeIndex = 0;
+
+			function pauseSlide(index) {
+
+				$slides.eq(index).find('video').each(function() {
+					this.pause();
+				});
+
+			}
+
+			function showSlide(index) {
+
+				var nextIndex = (index + $slides.length) % $slides.length;
+
+				if (nextIndex === activeIndex)
+					return;
+
+				pauseSlide(activeIndex);
+
+				activeIndex = nextIndex;
+
+				$slides
+					.removeClass('is-active')
+					.eq(activeIndex)
+					.addClass('is-active');
+
+				$dots
+					.removeClass('is-active')
+					.eq(activeIndex)
+					.addClass('is-active');
+
+			}
+
+			$carousel.data('carousel-initialized', true);
+
+			$slides
+				.removeClass('is-active')
+				.eq(activeIndex)
+				.addClass('is-active');
+
+			$dots
+				.removeClass('is-active')
+				.eq(activeIndex)
+				.addClass('is-active');
+
+			$carousel.find('[data-carousel-prev]').on('click', function(event) {
+				event.preventDefault();
+				showSlide(activeIndex - 1);
+			});
+
+			$carousel.find('[data-carousel-next]').on('click', function(event) {
+				event.preventDefault();
+				showSlide(activeIndex + 1);
+			});
+
+			$dots.each(function(index) {
+
+				$(this).on('click', function(event) {
+					event.preventDefault();
+					showSlide(index);
+				});
+
+			});
+
+		});
+
+	}
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -154,6 +238,7 @@
 						return;
 
 				loadDeferredMedia($article);
+				initCarousels($article);
 
 				// Handle lock.
 
