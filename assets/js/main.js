@@ -191,6 +191,7 @@
 
 		var	work_project_ids = [
 			'mpm-sim',
+			'voxel-renderer',
 			'fluid-simulation',
 			'raytracer',
 			'particle-simulation',
