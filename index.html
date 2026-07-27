@@ -115,6 +115,32 @@
     </div>
   </section>
           <hr />
+          <section id="voxel-renderer">
+            <div class="about-container">
+              <div class="about-text">
+                <h3>Voxel Terrain Renderer</h3>
+                <p>Built a C++20/OpenGL compute-shader renderer that combines USGS elevation tiles and Microsoft Building Footprints
+GeoJSON, recreating real city layouts covering approximately 4.3 × 1.7 miles.</p>
+                <p>Constructs a 401 million-voxel terrain in 3.2 seconds using 82,000+ hash-indexed chunks, residency bitmasks, and 1.8
+million pooled voxel bricks, with raycast-based placement and destruction which dynamically allocates and frees storage.</p>
+                <p>Flattened pointer-based CPU world structures into compact chunk, brick-reference, voxel, and lookup SSBOs for GPU
+traversal.</p>
+                <p>Implemented hierarchical DDA traversal with empty-space skipping and distance-based level of detail, rendering the full
+terrain at approximately 200 FPS at 2560x1440.</p>
+                <p>Future plans include integrating this with my particle simulations to give them some terrain to flow over.</p>
+                <p><a href="images/voxels.mp4" target="_blank" rel="noopener">Open recording directly</a></p>                
+              </div>
+              <div class="about-image">
+                <video controls preload="none" style="width: 100%; height: auto;">
+                  <source data-src="images/voxels.mp4" type="video/mp4">
+                  Your browser does not support this video format.
+                </video>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
           <section id="fluid-simulation">
              <div class="about-container">
                <div class="about-text">
